@@ -82,12 +82,12 @@
 
 <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="不再犹豫博客">
+<meta property="og:title" content="不再犹豫">
 <meta property="og:url" content="yangzhenlie.github.io/index.html">
-<meta property="og:site_name" content="不再犹豫博客">
+<meta property="og:site_name" content="不再犹豫">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="不再犹豫博客">
+<meta name="twitter:title" content="不再犹豫">
 <meta name="twitter:description">
 
 
@@ -101,15 +101,15 @@
     motion: true,
     duoshuo: {
       userId: 0,
-      author: 'Author'
+      author: '博主'
     }
   };
 </script>
 
-  <title> 不再犹豫博客 </title>
+  <title> 不再犹豫 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -139,7 +139,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">不再犹豫博客</span>
+      <span class="site-title">不再犹豫</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -166,7 +166,7 @@
             
               <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
             
-            Startseite
+            首页
           </a>
         </li>
       
@@ -176,7 +176,7 @@
             
               <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
             
-            Archiv
+            归档
           </a>
         </li>
       
@@ -186,7 +186,7 @@
             
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
-            Tags
+            标签
           </a>
         </li>
       
@@ -242,7 +242,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-03T23:43:50+08:00" content="2016-01-03">
               2016-01-03
             </time>
@@ -254,7 +254,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/JavaScript/" itemprop="url" rel="index">
@@ -270,6 +270,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/03/正则的方法test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/03/正则的方法test/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -292,10 +299,16 @@
       
         
           
-            <p>test : 正则去匹配字符串，如果匹配成功就返回真，如果匹配失败就返回假</p>
-<p>test的写法 : 正则.test(字符串)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var str = &apos;abcdef&apos;;</span><br><span class="line">var re = /b/;</span><br><span class="line">alert( re.test(str) );	//弹出true</span><br></pre></td></tr></table></figure></p>
+          test : 正则去匹配字符串，如果匹配成功就返回真，如果匹配失败就返回假
+test的写法 : 正则.test(字符串)123var str = &apos;abcdef&apos;;var re = /b/;alert( re.test(str) );	//弹出true
 
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/03/正则的方法test/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -356,7 +369,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-03T23:27:04+08:00" content="2016-01-03">
               2016-01-03
             </time>
@@ -368,7 +381,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/JavaScript/" itemprop="url" rel="index">
@@ -384,6 +397,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/03/什么是正则/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/03/什么是正则/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -406,17 +426,19 @@
       
         
           
-            <p>正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。</p>
-<p>正则也叫做规则，让计算机能够读懂人类的规则<br>正则都是操作字符串的</p>
-<p>正则表达式的特点是：</p>
-<ol>
-<li>灵活性、逻辑性和功能性非常的强；</li>
-<li>可以迅速地用极简单的方式达到字符串的复杂控制。</li>
-<li>对于刚接触的人来说，比较晦涩难懂。</li>
-</ol>
-<p>正则的写法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var re = /a/;				//简写方式</span><br><span class="line">var re = new RegExp(&apos;a&apos;);	//全写方式</span><br></pre></td></tr></table></figure></p>
+          正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。
+正则也叫做规则，让计算机能够读懂人类的规则正则都是操作字符串的
+正则表达式的特点是：
 
-          
+灵活性、逻辑性和功能性非常的强；
+可以迅速
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/03/什么是正则/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -477,7 +499,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-01T16:20:15+08:00" content="2016-01-01">
               2016-01-01
             </time>
@@ -489,7 +511,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/AngularJS/" itemprop="url" rel="index">
@@ -505,6 +527,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/01/初步认识AngularJS/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/01/初步认识AngularJS/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -527,13 +556,14 @@
       
         
           
-            <p>什么是angularJs？<br>    angularJs基于javascript开发的客户端应用框架，使我们可以更加快捷，简单的开发web应用。诞生于2009年，后来被google收购，用在了很多项目中。适用于CRUD应用或者SPA单页面网站的开发。<br>    angularJs是为了克服HTML在构建应用上的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得乏力了。所以我做了一些工作（你也可以觉得是小花招）来让浏览器做我想要的事。</p>
-<p>五大特性：<br>    1、良好的应用程序结构<br>    2、双向数据绑定<br>    3、指令<br>    4、HTML 模板<br>    5、可嵌入、注入和测试</p>
-<p>优点：<br>    1、模板功能强大丰富，并且是声明式的，自带了丰富的 Angular 指令<br>    2、是一个比较完善的前端MV*框架，包含模板，数据双向绑定，路由，模块化，服务，依赖注入等所有功能<br>    3、自定义 Directive，比 jQuery 插件还灵活，但是需要深入了解 Directive 的一些特性，简单的封装容易，复杂一点官方没有提供详细的介绍文档，我们可以通过阅读源代码来找到某些我们需要的东西，如：在 directive 使用 $parse<br>    4、ng模块化比较大胆的引入了Java的一些东西（依赖注入），能够很容易的写出可复用的代码，对于敏捷开发的团队来说非常有帮助，我们的项目从上线到目前，UI变化很大，在摸索中迭代产品，但是js的代码基本上很少改动</p>
-<p>缺点：<br>    1、验证功能错误信息显示比较薄弱，需要写很多模板标签，没有JQuery Validate方便，所以我们自己封装了验证的错误信息提示<br>    2、ngView只能有一个，不能嵌套多个视图<br>    3、对于特别复杂的应用场景，貌似性能有点问题，特别是在Windows下使用chrome浏览器，不知道是内存泄漏了还是什么其他问题，没有找到好的解决方案，奇怪的是在IE10下反而很快，对此还在观察中<br>    4、这次从1.0.X升级到1.2.X，貌似有比较大的调整，没有完美兼容低版本，升级之后可能会导致一个兼容性的BUG，具体详细信息参考官方文档 AngularJS<br>    5、ng提倡在控制器里面不要有操作DOM的代码，对于一些JQuery 插件的使用，如果想不破坏代码的整洁性，需要写一些directive去封装一下JQ插件，但是现在有很多插件的版本已经支持Angular了<br>    6、Angular 太笨重了，没有让用户选择一个轻量级的版本，当然1.2.X后，Angular也在做一些更改，比如把route，animate等模块独立出去，让用户自己去选择<br>    7、兼容性不是很好<br>    8、SEO不是很理想</p>
-<p>angularJs资源<br>    1、<a href="http://www.angularjs.org/" target="_blank" rel="external">http://www.angularjs.org/</a><br>    2、<a href="https://www.github.com/angular/" target="_blank" rel="external">https://www.github.com/angular/</a><br>    3、<a href="http://www.angularjs.cn/" target="_blank" rel="external">http://www.angularjs.cn/</a><br>    4、<a href="http://www.ngnice.com/" target="_blank" rel="external">http://www.ngnice.com/</a><br>    5、<a href="http://woxx.sinaapp.com/" target="_blank" rel="external">http://woxx.sinaapp.com/</a></p>
+          什么是angularJs？    angularJs基于javascript开发的客户端应用框架，使我们可以更加快捷，简单的开发web应用。诞生于2009年，后来被google收购，用在了很多项目中。适用于CRUD应用或者SPA单页面网站的开发。    angularJs是为了克服HTML在构建应用
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/01/初步认识AngularJS/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -594,7 +624,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2016-01-01T12:37:48+08:00" content="2016-01-01">
               2016-01-01
             </time>
@@ -606,7 +636,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/吐槽/" itemprop="url" rel="index">
@@ -622,6 +652,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/01/新的一年/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/01/新的一年/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -644,10 +681,16 @@
       
         
           
-            <p>今天是2016年1月1日，不知不觉从事前端一年多了，新的一年新的开始，还需不停的努力，我是最棒的。</p>
-<p>梦想还是要有的，万一实现了呢，帮自己打下鸡血。。。</p>
+          今天是2016年1月1日，不知不觉从事前端一年多了，新的一年新的开始，还需不停的努力，我是最棒的。
+梦想还是要有的，万一实现了呢，帮自己打下鸡血。。。
 
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/01/新的一年/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -708,7 +751,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-30T22:35:47+08:00" content="2015-12-30">
               2015-12-30
             </time>
@@ -720,7 +763,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/CSS3/" itemprop="url" rel="index">
@@ -736,6 +779,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/30/利用rem进行弹性布局/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/30/利用rem进行弹性布局/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -758,15 +808,16 @@
       
         
           
-            <p>现在在做移动端项目中都是用了rem进行了弹性布局，顺便聊下rem的那些事。</p>
-<p>所谓rem，rem是css3新增的一个单位。在W3C官网上是这样描述rem的——“font size of the root element” 。</p>
-<p>rem的大小是根据<html>的“font-size”为基准，我们来看一个简单的代码实例：</html></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">html&#123;</span><br><span class="line">       font-size: 10px;</span><br><span class="line">&#125;</span><br><span class="line">div&#123;</span><br><span class="line">       width: 1.5rem;</span><br><span class="line">       height: 1.5rem;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> 那么div的宽度就是15px，高度也是15px，也就是1.5*10=10，计算公式：(根节点的字体大小) 乘以 (本身rem的大小)，为了在做项目中计算方便，可以设置html:font-size为100px，最好不要设置10px（谷歌浏览器不支持12px以下的字体）。</p>
-<p> 当然，在做移动端项目的时候，最好能通过屏幕的宽度，按照比例进行动态设置html:font-size的大小。可以通过js，或者media都可以的。</p>
-<p> 对于PC端，IE6-8不支持rem，所以最好在移动端上用。</p>
+          现在在做移动端项目中都是用了rem进行了弹性布局，顺便聊下rem的那些事。
+所谓rem，rem是css3新增的一个单位。在W3C官网上是这样描述rem的——“font size of the root element” 。
+rem的大小是根据的“font-size”为基准，我们来看一个简单的代码实例
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/30/利用rem进行弹性布局/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -827,7 +878,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">发表于</span>
             <time itemprop="dateCreated" datetime="2015-12-29T12:01:30+08:00" content="2015-12-29">
               2015-12-29
             </time>
@@ -839,7 +890,7 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">in</span>
+              <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/吐槽/" itemprop="url" rel="index">
@@ -855,6 +906,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/29/利用hexo搭建github博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/29/利用hexo搭建github博客/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -877,9 +935,15 @@
       
         
           
-            <p>今天心血来潮，利用hexo框架在github搭建了博客，虽然中途中遇到很多坑，但总算搭建下来了，吐槽一下，做个记录。</p>
+          今天心血来潮，利用hexo框架在github搭建了博客，虽然中途中遇到很多坑，但总算搭建下来了，吐槽一下，做个记录。
 
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2015/12/29/利用hexo搭建github博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -940,15 +1004,15 @@
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/default_avatar.jpg"
-               alt="yzl" />
-          <p class="site-author-name" itemprop="name">yzl</p>
+               alt="不再犹豫" />
+          <p class="site-author-name" itemprop="name">不再犹豫</p>
           <p class="site-description motion-element" itemprop="description"></p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
@@ -956,7 +1020,7 @@
             <div class="site-state-item site-state-categories">
               
                 <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">Kategorien</span>
+                <span class="site-state-item-name">分类</span>
               
             </div>
           
@@ -965,7 +1029,7 @@
             <div class="site-state-item site-state-tags">
               <a href="/tags">
                 <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">标签</span>
               </a>
             </div>
           
@@ -1005,15 +1069,15 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">yzl</span>
+  <span class="author" itemprop="copyrightHolder">不再犹豫</span>
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  Theme -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
@@ -1092,9 +1156,28 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"772388856"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
   
+    
+  
+
+
 
 
 
