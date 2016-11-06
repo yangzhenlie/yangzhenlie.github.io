@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="AngularJS," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -80,16 +80,22 @@
 
 
 
-<meta name="description" content="什么是angularJs？    angularJs基于javascript开发的客户端应用框架，使我们可以更加快捷，简单的开发web应用。诞生于2009年，后来被google收购，用在了很多项目中。适用于CRUD应用或者SPA单页面网站的开发。    angularJs是为了克服HTML在构建应用上的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得">
+<meta name="description" content="闭包就是能够读取其他函数内部变量的函数，由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。
+它的最大用处有两个，一个是可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。
+12345678910111213 function f1()&amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="初步认识AngularJS">
-<meta property="og:url" content="yangzhenlie.github.io/2016/01/01/初步认识AngularJS/index.html">
+<meta property="og:title" content="闭包">
+<meta property="og:url" content="yangzhenlie.github.io/2016/01/09/闭包/index.html">
 <meta property="og:site_name" content="不再犹豫">
-<meta property="og:description" content="什么是angularJs？    angularJs基于javascript开发的客户端应用框架，使我们可以更加快捷，简单的开发web应用。诞生于2009年，后来被google收购，用在了很多项目中。适用于CRUD应用或者SPA单页面网站的开发。    angularJs是为了克服HTML在构建应用上的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得">
-<meta property="og:updated_time" content="2016-01-01T09:17:40.000Z">
+<meta property="og:description" content="闭包就是能够读取其他函数内部变量的函数，由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。
+它的最大用处有两个，一个是可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。
+12345678910111213 function f1()&amp;#123;">
+<meta property="og:updated_time" content="2016-11-06T03:49:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="初步认识AngularJS">
-<meta name="twitter:description" content="什么是angularJs？    angularJs基于javascript开发的客户端应用框架，使我们可以更加快捷，简单的开发web应用。诞生于2009年，后来被google收购，用在了很多项目中。适用于CRUD应用或者SPA单页面网站的开发。    angularJs是为了克服HTML在构建应用上的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得">
+<meta name="twitter:title" content="闭包">
+<meta name="twitter:description" content="闭包就是能够读取其他函数内部变量的函数，由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。
+它的最大用处有两个，一个是可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。
+12345678910111213 function f1()&amp;#123;">
 
 
 
@@ -107,7 +113,7 @@
   };
 </script>
 
-  <title> 初步认识AngularJS | 不再犹豫 </title>
+  <title> 闭包 | 不再犹豫 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -170,22 +176,32 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+        <li class="menu-item menu-item-javascript">
+          <a href="/categories/JavaScript" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            归档
+            JavaScript
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+        <li class="menu-item menu-item-css3">
+          <a href="/categories/CSS3" rel="section">
             
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
             
-            标签
+            CSS3
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -227,7 +243,7 @@
             
             
               
-                初步认识AngularJS
+                闭包
               
             
           </h1>
@@ -239,8 +255,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-01T16:20:15+08:00" content="2016-01-01">
-              2016-01-01
+            <time itemprop="dateCreated" datetime="2016-01-09T13:43:21+08:00" content="2016-01-09">
+              2016-01-09
             </time>
           </span>
 
@@ -253,8 +269,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/AngularJS/" itemprop="url" rel="index">
-                    <span itemprop="name">AngularJS</span>
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
                   </a>
                 </span>
 
@@ -269,8 +285,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/01/初步认识AngularJS/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/01/初步认识AngularJS/" itemprop="commentsCount"></span>
+                <a href="/2016/01/09/闭包/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/09/闭包/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -293,11 +309,9 @@
       
 
       
-        <p>什么是angularJs？<br>    angularJs基于javascript开发的客户端应用框架，使我们可以更加快捷，简单的开发web应用。诞生于2009年，后来被google收购，用在了很多项目中。适用于CRUD应用或者SPA单页面网站的开发。<br>    angularJs是为了克服HTML在构建应用上的不足而设计的。HTML是一门很好的为静态文本展示设计的声明式语言，但要构建WEB应用的话它就显得乏力了。所以我做了一些工作（你也可以觉得是小花招）来让浏览器做我想要的事。</p>
-<p>五大特性：<br>    1、良好的应用程序结构<br>    2、双向数据绑定<br>    3、指令<br>    4、HTML 模板<br>    5、可嵌入、注入和测试</p>
-<p>优点：<br>    1、模板功能强大丰富，并且是声明式的，自带了丰富的 Angular 指令<br>    2、是一个比较完善的前端MV*框架，包含模板，数据双向绑定，路由，模块化，服务，依赖注入等所有功能<br>    3、自定义 Directive，比 jQuery 插件还灵活，但是需要深入了解 Directive 的一些特性，简单的封装容易，复杂一点官方没有提供详细的介绍文档，我们可以通过阅读源代码来找到某些我们需要的东西，如：在 directive 使用 $parse<br>    4、ng模块化比较大胆的引入了Java的一些东西（依赖注入），能够很容易的写出可复用的代码，对于敏捷开发的团队来说非常有帮助，我们的项目从上线到目前，UI变化很大，在摸索中迭代产品，但是js的代码基本上很少改动</p>
-<p>缺点：<br>    1、验证功能错误信息显示比较薄弱，需要写很多模板标签，没有JQuery Validate方便，所以我们自己封装了验证的错误信息提示<br>    2、ngView只能有一个，不能嵌套多个视图<br>    3、对于特别复杂的应用场景，貌似性能有点问题，特别是在Windows下使用chrome浏览器，不知道是内存泄漏了还是什么其他问题，没有找到好的解决方案，奇怪的是在IE10下反而很快，对此还在观察中<br>    4、这次从1.0.X升级到1.2.X，貌似有比较大的调整，没有完美兼容低版本，升级之后可能会导致一个兼容性的BUG，具体详细信息参考官方文档 AngularJS<br>    5、ng提倡在控制器里面不要有操作DOM的代码，对于一些JQuery 插件的使用，如果想不破坏代码的整洁性，需要写一些directive去封装一下JQ插件，但是现在有很多插件的版本已经支持Angular了<br>    6、Angular 太笨重了，没有让用户选择一个轻量级的版本，当然1.2.X后，Angular也在做一些更改，比如把route，animate等模块独立出去，让用户自己去选择<br>    7、兼容性不是很好<br>    8、SEO不是很理想</p>
-<p>angularJs资源<br>    1、<a href="http://www.angularjs.org/" target="_blank" rel="external">http://www.angularjs.org/</a><br>    2、<a href="https://www.github.com/angular/" target="_blank" rel="external">https://www.github.com/angular/</a><br>    3、<a href="http://www.angularjs.cn/" target="_blank" rel="external">http://www.angularjs.cn/</a><br>    4、<a href="http://www.ngnice.com/" target="_blank" rel="external">http://www.ngnice.com/</a><br>    5、<a href="http://woxx.sinaapp.com/" target="_blank" rel="external">http://woxx.sinaapp.com/</a></p>
+        <p>闭包就是能够读取其他函数内部变量的函数，由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。<br>所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。</p>
+<p>它的最大用处有两个，一个是可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> function f1()&#123;</span><br><span class="line">    var n=999;</span><br><span class="line">    nAdd=function()&#123;n+=1&#125;</span><br><span class="line">    function f2()&#123;</span><br><span class="line">        alert(n);</span><br><span class="line">    &#125;</span><br><span class="line">    return f2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var result=f1();</span><br><span class="line">result(); // 999</span><br><span class="line">nAdd();</span><br><span class="line">result(); // 1000 </span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -316,27 +330,21 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/AngularJS/" rel="tag">#AngularJS</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/30/利用rem进行弹性布局/" rel="next" title="利用rem进行弹性布局">
-                <i class="fa fa-chevron-left"></i> 利用rem进行弹性布局
+              <a href="/2016/01/08/js实现继承/" rel="next" title="js实现继承">
+                <i class="fa fa-chevron-left"></i> js实现继承
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/03/什么是正则/" rel="prev" title="什么是正则">
-                什么是正则 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/12/Function对象的属性和方法/" rel="prev" title="Function对象的属性和方法">
+                Function对象的属性和方法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -369,8 +377,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/01/初步认识AngularJS/"
-           data-title="初步认识AngularJS" data-url="yangzhenlie.github.io/2016/01/01/初步认识AngularJS/">
+      <div class="ds-thread" data-thread-key="2016/01/09/闭包/"
+           data-title="闭包" data-url="yangzhenlie.github.io/2016/01/09/闭包/">
       </div>
     
   </div>
@@ -414,8 +422,8 @@
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">5</span>
+            <a href="/">
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -431,10 +439,10 @@
 
           
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
+              
                 <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
-              </a>
+              
             </div>
           
 

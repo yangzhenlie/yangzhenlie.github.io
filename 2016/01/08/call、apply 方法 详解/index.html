@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -80,40 +80,22 @@
 
 
 
-<meta name="description" content="正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。
-正则也叫做规则，让计算机能够读懂人类的规则正则都是操作字符串的
-正则表达式的特点是：
-
-灵活性、逻辑性和功能性非常的强；
-可以迅速地用极简单的方式达到字符串的复杂控制。
-对于刚接触的人来说，比较晦涩难懂。
-
-正则的写法：12var">
+<meta name="description" content="定义：调用一个对象的一个方法，以另一个对象替换当前对象。 为了改变函数体内部 this 的指向。可以继承
+区别：call 、apply传入的类型不一样，apply传入的是数组call([this, “”);apply(this, []);
+123456789101112131415161718function Animal()&amp;#123;        this.name = &amp;quot;Anim">
 <meta property="og:type" content="article">
-<meta property="og:title" content="什么是正则">
-<meta property="og:url" content="yangzhenlie.github.io/2016/01/03/什么是正则/index.html">
+<meta property="og:title" content="call、apply 方法 详解">
+<meta property="og:url" content="yangzhenlie.github.io/2016/01/08/call、apply 方法 详解/index.html">
 <meta property="og:site_name" content="不再犹豫">
-<meta property="og:description" content="正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。
-正则也叫做规则，让计算机能够读懂人类的规则正则都是操作字符串的
-正则表达式的特点是：
-
-灵活性、逻辑性和功能性非常的强；
-可以迅速地用极简单的方式达到字符串的复杂控制。
-对于刚接触的人来说，比较晦涩难懂。
-
-正则的写法：12var">
-<meta property="og:updated_time" content="2016-01-03T15:41:55.000Z">
+<meta property="og:description" content="定义：调用一个对象的一个方法，以另一个对象替换当前对象。 为了改变函数体内部 this 的指向。可以继承
+区别：call 、apply传入的类型不一样，apply传入的是数组call([this, “”);apply(this, []);
+123456789101112131415161718function Animal()&amp;#123;        this.name = &amp;quot;Anim">
+<meta property="og:updated_time" content="2016-11-06T03:47:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="什么是正则">
-<meta name="twitter:description" content="正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。
-正则也叫做规则，让计算机能够读懂人类的规则正则都是操作字符串的
-正则表达式的特点是：
-
-灵活性、逻辑性和功能性非常的强；
-可以迅速地用极简单的方式达到字符串的复杂控制。
-对于刚接触的人来说，比较晦涩难懂。
-
-正则的写法：12var">
+<meta name="twitter:title" content="call、apply 方法 详解">
+<meta name="twitter:description" content="定义：调用一个对象的一个方法，以另一个对象替换当前对象。 为了改变函数体内部 this 的指向。可以继承
+区别：call 、apply传入的类型不一样，apply传入的是数组call([this, “”);apply(this, []);
+123456789101112131415161718function Animal()&amp;#123;        this.name = &amp;quot;Anim">
 
 
 
@@ -131,7 +113,7 @@
   };
 </script>
 
-  <title> 什么是正则 | 不再犹豫 </title>
+  <title> call、apply 方法 详解 | 不再犹豫 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -261,7 +243,7 @@
             
             
               
-                什么是正则
+                call、apply 方法 详解
               
             
           </h1>
@@ -273,8 +255,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-03T23:27:04+08:00" content="2016-01-03">
-              2016-01-03
+            <time itemprop="dateCreated" datetime="2016-01-08T18:20:02+08:00" content="2016-01-08">
+              2016-01-08
             </time>
           </span>
 
@@ -303,8 +285,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/03/什么是正则/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/03/什么是正则/" itemprop="commentsCount"></span>
+                <a href="/2016/01/08/call、apply 方法 详解/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/08/call、apply 方法 详解/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -327,16 +309,10 @@
       
 
       
-        <p>正则表达式是对字符串操作的一种逻辑公式，就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，这个“规则字符串”用来表达对字符串的一种过滤逻辑。</p>
-<p>正则也叫做规则，让计算机能够读懂人类的规则<br>正则都是操作字符串的</p>
-<p>正则表达式的特点是：</p>
-<ol>
-<li>灵活性、逻辑性和功能性非常的强；</li>
-<li>可以迅速地用极简单的方式达到字符串的复杂控制。</li>
-<li>对于刚接触的人来说，比较晦涩难懂。</li>
-</ol>
-<p>正则的写法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var re = /a/;				//简写方式</span><br><span class="line">var re = new RegExp(&apos;a&apos;);	//全写方式</span><br></pre></td></tr></table></figure></p>
-
+        <p>定义：调用一个对象的一个方法，以另一个对象替换当前对象。 为了改变函数体内部 this 的指向。可以继承</p>
+<p>区别：call 、apply传入的类型不一样，apply传入的是数组<br>call([this, “”);<br>apply(this, []);</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">function Animal()&#123;    </span><br><span class="line">    this.name = &quot;Animal&quot;;    </span><br><span class="line">    this.showName = function()&#123;    </span><br><span class="line">        alert(this.name);    </span><br><span class="line">    &#125;    </span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">function Cat()&#123;    </span><br><span class="line">    this.name = &quot;Cat&quot;;    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var animal = new Animal();    </span><br><span class="line">var cat = new Cat(); </span><br><span class="line"></span><br><span class="line">//通过call或apply方法，将原本属于Animal对象的showName()方法交给对象cat来使用了。    </span><br><span class="line">//输入结果为&quot;Cat&quot;  </span><br><span class="line">animal.showName.call(cat,&quot;,&quot;); //Cat </span><br><span class="line">//animal.showName.apply(cat,[]);  </span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function Class10()&#123;  </span><br><span class="line">    this.showSub = function(a,b)&#123;  </span><br><span class="line">        alert(a-b);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">function Class11()&#123;  </span><br><span class="line">    this.showAdd = function(a,b)&#123;  </span><br><span class="line">        alert(a+b);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br><span class="line">function Class2()&#123;  </span><br><span class="line">    Class10.call(this);  </span><br><span class="line">    Class11.call(this);  </span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -354,27 +330,21 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/30/利用rem进行弹性布局/" rel="next" title="利用rem进行弹性布局">
-                <i class="fa fa-chevron-left"></i> 利用rem进行弹性布局
+              <a href="/2016/01/03/正则的方法test/" rel="next" title="正则的方法test">
+                <i class="fa fa-chevron-left"></i> 正则的方法test
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/03/正则的方法test/" rel="prev" title="正则的方法test">
-                正则的方法test <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/08/js实现继承/" rel="prev" title="js实现继承">
+                js实现继承 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -407,8 +377,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/03/什么是正则/"
-           data-title="什么是正则" data-url="yangzhenlie.github.io/2016/01/03/什么是正则/">
+      <div class="ds-thread" data-thread-key="2016/01/08/call、apply 方法 详解/"
+           data-title="call、apply 方法 详解" data-url="yangzhenlie.github.io/2016/01/08/call、apply 方法 详解/">
       </div>
     
   </div>
